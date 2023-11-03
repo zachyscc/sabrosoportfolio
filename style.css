@@ -1,0 +1,111 @@
+header[role="banner"] {
+  #logo-main {
+    display: block;
+    margin: 50px auto;
+  }
+}
+
+#navbar-primary.navbar-default {
+  color: #FFFFFF;
+  .navbar-nav { 
+    width: 95%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    > li {
+      display: inline-block;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #FFFFFF;
+        }
+    }
+  }
+ }
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+ }
+ body::-webkit-scrollbar{
+  display: none;
+}
+.animated-text
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+.wrapper {
+  height: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+.typingz {
+  width: 30ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  margin: 0;
+  margin: auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.highlight-second-text{
+  position:relative;
+  left:0.5em;
+  font-family: Libre Franklin;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+.wrapper {
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+}
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+                    only screen and (min--moz-device-pixel-ratio: 3),
+                    only screen and (-o-min-device-pixel-ratio: 3/1),
+                    only screen and (min-device-pixel-ratio: 3)
+  .back-video{
+    width: 100%;
+    height: auto;
+}
+}
